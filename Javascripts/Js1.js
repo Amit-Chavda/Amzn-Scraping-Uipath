@@ -1,22 +1,25 @@
 function() {
-    let len = document.getElementsByClassName("s-main-slot s-result-list s-search-results sg-row")[0].children.length - 5
 
-    let title = "";
-    let link = "";
-    for (let x = 1; x <= len; x++) {
-        let isAd = document.getElementsByClassName("s-main-slot s-result-list s-search-results sg-row")[0].children[x].children[0].children[0].children[0].children[0].innerText.includes("Sponsored")
+    let titles = "";
+    let links = "";
+    for (let i = 1; i < document.getElementsByClassName("s-main-slot s-result-list s-search-results sg-row")[0].children.length; i++) {
 
+        var val = checkRegex(document.getElementsByClassName("s-main-slot s-result-list s-search-results sg-row")[0].children[i].innerText);
 
-        if (isAd) {
-            let val = document.getElementsByClassName("s-main-slot s-result-list s-search-results sg-row")[0].children[10].children[0].children[0].children[0].children[0].children[0].children[0].children[1].children[1].children[0].children[0].children[2].children[0].children[0].children[0].children[1];
-            if (val != undefined) {
-                title = +document.getElementsByClassName("s-main-slot s-result-list s-search-results sg-row")[0].children[x].children[0].children[0].children[0].children[0].children[0].children[0].children[1].children[1].children[0].children[0].children[0].children[1].innerText + "*";
-                link = +document.getElementsByClassName("s-main-slot s-result-list s-search-results sg-row")[0].children[x].children[0].children[0].children[0].children[0].children[0].children[0].children[1].children[1].children[0].children[0].children[2].children[0].children[0].children[0].children[1].children[0].children[0].children[0].innerText + "*";
+        if (val) {
+            var link = document.getElementsByClassName("s-main-slot s-result-list s-search-results sg-row")[0].children[i].getElementsByClassName("a-link-normal s-link-style a-text-normal")[0];
+            if (link != undefined) {
+                title = link.innerText;
+
+                links += link + "#";
+                titles += title + "=";
             }
-        } else {
-            title = +document.getElementsByClassName("s-main-slot s-result-list s-search-results sg-row")[0].children[1].children[0].children[0].children[0].children[0].children[0].children[0].children[1].children[1].children[0].children[0].children[0].children[1].innerText + "*";
-            link = +document.getElementsByClassName("s-main-slot s-result-list s-search-results sg-row")[0].children[1].children[0].children[0].children[0].children[0].children[0].children[0].children[1].children[1].children[0].children[0].children[0].children[1].children[0].href + "*";
         }
     }
-    return title + "=" + link;
+    return titles + "~" + links;
+}
+
+function checkRegex(str) {
+    var words = ["Delivery", "Get it by", "stock", "out of", "starts"];
+    return new RegExp(words.join('|')).test(str);
 }
