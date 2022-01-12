@@ -1,14 +1,16 @@
 function(event, prevData) {
     alert(prevData)
 
-    let titles = "";
-    let links = "";
-    if (prevData == null) {
-        prevData = "~";
-    } else {
-        titles = prevData.split("~")[0];
-        links = prevData.split("~")[1];
-    }
+    const obj = JSON.parse(prevData);
+
+    // let titles = "";
+    // let links = "";
+    // if (prevData == null) {
+    //     prevData = "~";
+    // } else {
+    //     titles = prevData.split("~")[0];
+    //     links = prevData.split("~")[1];
+    // }
 
 
     for (let i = 1; i < document.getElementsByClassName("s-main-slot s-result-list s-search-results sg-row")[0].children.length; i++) {
@@ -20,13 +22,16 @@ function(event, prevData) {
             if (link != undefined) {
                 title = link.innerText;
 
-                links += link + "#";
-                titles += title + "=";
+
+                obj.push({ "Description": title, "Link": link + "" });
+
+                // links += link + "#";
+                // titles += title + "=";
             }
         }
     }
 
-    return titles + "~" + links;
+    return JSON.stringify(obj); //titles + "~" + links;
 }
 
 // function clickBtn() {
