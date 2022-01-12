@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "GHs5fxqFDkQynm6XRbzV7jN3S1uofk6n5xvaSKKuuUdR4qJUygFirx5O181XqpIeF4v2b6+AVkcq9mn5CESAjg==",
+  "dgSpecHash": "qTuBF1EisZwo0R3G9aBD5jsF8TdNKSbsBdMglP+vmlTRBaspSdrOX2t9Wc0UVk7gkmxvBo6YeKoVcW2pZK1WMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\amitc\\Documents\\UiPath\\Web Scrapingbot\\.local\\",
   "expectedPackageFiles": [
+    "C:\\Users\\amitc\\.nuget\\packages\\auxiliobits.datatabletojson.activities\\1.0.0\\auxiliobits.datatabletojson.activities.1.0.0.nupkg.sha512",
+    "C:\\Users\\amitc\\.nuget\\packages\\avalonedit\\6.0.1\\avalonedit.6.0.1.nupkg.sha512",
     "C:\\Users\\amitc\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\amitc\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
     "C:\\Users\\amitc\\.nuget\\packages\\documentformat.openxml\\2.5.0\\documentformat.openxml.2.5.0.nupkg.sha512",
@@ -60,6 +62,7 @@
     "C:\\Users\\amitc\\.nuget\\packages\\nito.disposables\\2.2.0\\nito.disposables.2.2.0.nupkg.sha512",
     "C:\\Users\\amitc\\.nuget\\packages\\npoi\\2.4.1\\npoi.2.4.1.nupkg.sha512",
     "C:\\Users\\amitc\\.nuget\\packages\\portable.bouncycastle\\1.8.8\\portable.bouncycastle.1.8.8.nupkg.sha512",
+    "C:\\Users\\amitc\\.nuget\\packages\\restsharp\\106.6.10\\restsharp.106.6.10.nupkg.sha512",
     "C:\\Users\\amitc\\.nuget\\packages\\sharpziplib\\1.2.0\\sharpziplib.1.2.0.nupkg.sha512",
     "C:\\Users\\amitc\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\amitc\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
@@ -94,7 +97,9 @@
     "C:\\Users\\amitc\\.nuget\\packages\\uipath.system.activities\\21.10.2\\uipath.system.activities.21.10.2.nupkg.sha512",
     "C:\\Users\\amitc\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\uipath.telemetry.client.1.5.3.nupkg.sha512",
     "C:\\Users\\amitc\\.nuget\\packages\\uipath.uiautomation.activities\\21.10.3\\uipath.uiautomation.activities.21.10.3.nupkg.sha512",
-    "C:\\Users\\amitc\\.nuget\\packages\\uipath.vision\\3.1.4\\uipath.vision.3.1.4.nupkg.sha512"
+    "C:\\Users\\amitc\\.nuget\\packages\\uipath.vision\\3.1.4\\uipath.vision.3.1.4.nupkg.sha512",
+    "C:\\Users\\amitc\\.nuget\\packages\\uipath.webapi.activities\\1.9.3-preview\\uipath.webapi.activities.1.9.3-preview.nupkg.sha512",
+    "C:\\Users\\amitc\\.nuget\\packages\\uipathteam.jsondataconverter.activities\\1.1.0\\uipathteam.jsondataconverter.activities.1.1.0.nupkg.sha512"
   ],
   "logs": []
 }

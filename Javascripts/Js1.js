@@ -1,5 +1,6 @@
-function(prevData) {
+function(event, prevData) {
     alert(prevData)
+
     let titles = "";
     let links = "";
     if (prevData == null) {
