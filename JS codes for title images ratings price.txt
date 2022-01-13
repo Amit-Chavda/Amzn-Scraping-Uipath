@@ -1,0 +1,17 @@
+Title :
+document.getElementById("productTitle").innerText
+
+Price:
+document.getElementsByClassName("a-price-whole")[1].innerText 
+
+Ratings:
+document.getElementsByClassName("averageStarRating")[0].innerText
+
+Images:
+document.getElementById("main-image-container").querySelectorAll("li img")[2].src
+
+All Images:
+for(let x = 0;x<document.getElementById("main-image-container").querySelectorAll("li img").length;x++){
+console.log(document.getElementById("main-image-container").querySelectorAll("li img")[x].src)
+
+}
