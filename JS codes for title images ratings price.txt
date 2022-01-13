@@ -15,3 +15,19 @@ for(let x = 0;x<document.getElementById("main-image-container").querySelectorAll
 console.log(document.getElementById("main-image-container").querySelectorAll("li img")[x].src)
 
 }
+
+
+
+
+
+
+
+
+document.getElementsByClassName("a-button a-button-thumbnail a-button-toggle")[3].click()
+
+
+for (let x = 0; x < document.getElementsByClassName("image item").length; x++) {
+        
+document.getElementsByClassName("image item")[x].querySelector("img")
+console.log(document.getElementsByClassName("image item")[x].querySelector("img").src);
+    }
